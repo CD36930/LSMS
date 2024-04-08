@@ -193,7 +193,7 @@ border: .5vw solid var(--light-brown)
 font-family: "great-vibes";
 font-weight: 400;
 font-style: normal;
-  src: <link rel="stylesheet" href="https://use.typekit.net/mad0bfm.css">;
+  src: url(https://use.typekit.net/mad0bfm.css);
  }
 
 .sign-up_section {
