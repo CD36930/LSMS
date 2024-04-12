@@ -10,6 +10,7 @@ Design for the Web II */
   --cream: #F5F2DA; 
   --lsms-blue: #0E6d95;
 }
+
 /*  ADJUST THE FOLLOWING TO CREATE STICKY NAVBAR: 
 header {
 position: fixed; 
@@ -19,7 +20,6 @@ width: 100%;
 z-index: 99; 
 background-color: var(--cream);
 } */
-
 
 /* .welcome_screen { 
   margin-top: 20vw; 
@@ -93,6 +93,29 @@ h3{
   font-size: 2.75vw; 
 }
 
+/* div and .hyperspan are for the three 'offerings' buttons: */ 
+
+
+div {
+  position:relative; 
+}
+
+.hyperspan {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+}
+
+a {
+  color: var(--dark-brown);
+  text-decoration: none; 
+}
+
+a:hover {
+ color: var(--lsms-blue); 
+}
 
 .group_classes{ 
 border: .5vw solid var(--tan);
