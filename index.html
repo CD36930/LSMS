@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Sparrow Music Studio Homepage</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/playing-with-dropdown.css" type="text/css">
 
     <!--Link for Great Vibes Font, Header Font-->
     <link rel="stylesheet" href="https://use.typekit.net/mad0bfm.css">
@@ -17,12 +17,51 @@
 <body>
     <header>
 
-          <!--This will be a "fixed menu"-->
+          <!--This will be a "fixed menu". Navbar begins here-->
         <div class="navbar">
-            <img src="images/bars-solid.svg" class="hamburger_menu" alt="image of clickable menu bars">
+
+            <!--Hamburger Menu-->
+        <div class="dropdown">
+            <img src="images/bars-solid.svg" id="hamburger" class="hamburger_menu" alt="image of clickable menu bars">
+
+<div id="myDropdown" class="dropdown-content">
+    <a href="#lessons-and-classes" class="desktop-nav-links">Lessons and Classes</a>
+            <a href="#about" class="desktop-nav-links">About</a>
+            <a href="#contact" class="desktop-nav-links">Contact</a>
+            <a href="#register" class="desktop-nav-links">Register</a>
+    </div>
+        </div>
+
+        <script>
+            document.getElementById("hamburger").onclick = function(){myFunction()};
+
+            function myFunction(){
+                
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+        </script>
+
+
+
+    
             <H1 class= "studio_title">Little Sparrow Music Studio</H1>
-            <img src="images/lsms_logo_vector.svg"  class="logo" alt="an image of the Little Sparrow Music Studio Logo: a bird with a music note">
+            <img src="images/lsms_logo_vector.svg"  class="logo" alt="an image of the Little Sparrow Music Studio Logo: a bird with a music note"> 
+        </div>
+
+
+        
+
+
+<!--End of Navbar-->
+
+
+        <div class="navigation-links">
+            <a href="#lessons-and-classes" class="desktop-nav-links">Lessons and Classes</a>
+            <a href="#about" class="desktop-nav-links">About</a>
+            <a href="#contact" class="desktop-nav-links">Contact</a>
+            <a href="#register" class="desktop-nav-links">Register</a>
         </div> 
+
     </header>
     
 
@@ -34,7 +73,8 @@
     
 
     <main>
-        <h2 class="lessons_and_classes">Lessons and Classes:</h2>
+        <h2 class="lessons_and_classes" id="lessons-and-classes">Lessons and Classes:</h2>
+
     <!--3-Lesson-Types Link Buttons-->
 
        <a href="#"><div class="group_classes"> <span class="hyperspan"></span>
@@ -53,7 +93,7 @@
 
     </main>
 
-    <article class="dark-tan-bg bio">  
+    <article class="dark-tan-bg bio" id="about">  
         <img src="images/anne_marie.png" class="am_photo" alt="a photograph of instructor Anne Marie, smiling and holding a conducting baton">
             <h2 class="about">About</h2>
             <h2 class="anne_marie">Anne Marie</h2>
@@ -66,14 +106,17 @@
 
 
     <article>
-    <h2 class="lessons_and_classes">Questions?</h2>
+    <h2 class="lessons_and_classes" id="questions">Questions?</h2>
     <h3 class="lessons_and_classes">Let's start a conversation!</h3>
     
    <!--Question Submission Form-->
-    <p class="lessons_and_classes">(Form Field Here)</p> 
+    <p class="lessons_and_classes" id="contact">(Form Field Here)<br><br>
+    Call us anytime at (804) 490-5478.</p>
+    
+
     </article>
 
-    <article class="dark-tan-bg sign-up_section"> 
+    <article class="dark-tan-bg sign-up_section" id="register"> 
         <h2 class="questions">Ready to begin learning?</h2>
         <h3>Sign up!</h3>
         <h3>(Sign-Up form here)</h3>
@@ -100,6 +143,10 @@
     </div>   -->
    
     </footer>
+
+
+   
+
 
 </body>
 
