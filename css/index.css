@@ -26,6 +26,36 @@ background-color: var(--cream);
 } */
 
 
+
+/*Media Queries*/
+
+
+@media only screen and (max-width:649px){
+.desktop-nav-links{
+  display: none; 
+}
+
+  .hamburger_menu {
+    display: flex; 
+    padding: 0;
+    width: 50vw; 
+  }
+
+}
+
+
+
+@media only screen and (min-width:650px){
+  .hamburger_menu {
+  display: none;
+  }
+
+  }
+  
+
+
+
+
 .navbar {
   display: flex; 
   justify-content: space-evenly;
@@ -65,8 +95,9 @@ background-color: var(--cream);
   max-width: 25%;
 }
 
+
 .hamburger_menu {
-  width: 6%;
+  width: 6vw;
 }
 
 body {
@@ -79,6 +110,23 @@ body {
 h3{
   font-weight: inherit; 
   font-size: 2.75vw; 
+}
+/*For Desktop Navigation Links: */
+
+.navigation-links {
+  display: flex; 
+  justify-content: center; 
+  font-size: 2.75vw; 
+  /* margin-left: 4vw; */
+  margin-right: 8vw;  
+  gap: 7vw; 
+  margin-bottom: 4vw; 
+  margin-top: 2vw; 
+}
+
+
+.desktop-nav-links:hover {
+text-decoration:underline;
 }
 
 .lessons_and_classes {
@@ -265,3 +313,31 @@ width:12%;
 .music_note_icon {
   width:15%;
 }
+
+
+/*For Dropdown*/
+.dropdown {
+  position: relative;
+  display: block;
+  z-index: 10; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
