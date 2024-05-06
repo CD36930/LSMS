@@ -1,0 +1,508 @@
+/* CSS for lsms/index.html 
+
+Ciara Donlon
+Professor McLeod
+Design for the Web II 
+May 4, 2024 
+
+Made with love <3
+
+Potential additions for the future: 
+i. Sticky Navbar 
+ii. PHP for Form
+iii. JS for Form Submission 
+*/ 
+
+
+:root {
+  --dark-brown: #42210B;
+  --light-brown: #59341F;
+  --tan: #C59C6C; 
+  --cream: #F5F2DA; 
+  --lsms-blue: #0E6d95;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width:649px){
+.desktop-nav-links{
+  display: none; 
+}
+
+  .hamburger_menu {
+    display: flex; 
+    padding: 0;
+    width: 50vw; 
+  }
+
+}
+
+@media only screen and (min-width:650px){
+  .hamburger_menu {
+  display: none;
+  }
+
+  }
+
+
+.navbar {
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+}
+
+.desktop-nav-links:active {
+  background-color:#0E6d95;
+  transition: .3s ease-in-out; 
+}
+
+
+/*flex within flex- .studio_title is placed within .navbar*/
+
+.studio_title {
+  font-family: great-vibes, helvetica, sans-serif; 
+  display: flex; 
+  font-size: 6vw; 
+  font-weight: 300; 
+  margin-left: 3%; 
+}
+
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap; 
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 1%;
+  padding-right: 10%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  background-color: var(--tan);
+  font-size: 2.75vw; 
+}
+
+.logo {
+  min-width: 20%; 
+  max-width: 25%;
+}
+
+
+.hamburger_menu {
+  width: 6vw;
+}
+
+body {
+  color:#42210B;
+  font-family: helvetica, sans-serif;
+  font-weight: 150; 
+  background-color: #f5f2da;
+}
+
+h3{
+  font-weight: inherit; 
+  font-size: 2.75vw; 
+}
+
+
+/*For Desktop Navigation Links: */
+
+.navigation-links {
+  display: flex; 
+  justify-content: center; 
+  font-size: 2.75vw; 
+  /* margin-left: 4vw; */
+  margin-right: 8vw;  
+  gap: 7vw; 
+  margin-bottom: 4vw; 
+  margin-top: 2vw; 
+}
+
+
+.desktop-nav-links:hover {
+text-decoration:underline;
+}
+
+.lessons_and_classes {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 1%;
+  padding-right: 10%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  font-size: 2.75vw; 
+}
+
+/* div and .hyperspan are for the three 'offerings' buttons: */ 
+
+
+div {
+  position:relative; 
+}
+
+.hyperspan {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+}
+
+a {
+  color: var(--dark-brown);
+  text-decoration: none; 
+}
+
+a:hover {
+ color: var(--lsms-blue); 
+}
+
+.group_classes{ 
+border: .5vw solid var(--tan);
+display: flex; 
+flex-direction: row-reverse; 
+justify-content: center; 
+align-items: center; 
+padding-right: 10%; 
+}
+
+.childhood_classes {
+  border: .5vw solid var(--tan);
+  border-top: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 0; 
+  padding-bottom: 0; 
+  padding-left: 5%; 
+}
+
+
+.individual_lessons {
+  border: .5vw solid var(--tan);
+  border-top: 0; 
+  display: flex; 
+  flex-direction: row-reverse; 
+  justify-content: center; 
+  align-items: center; 
+  padding-right: 12%; 
+  margin-top: 0; 
+}
+
+.am_photo {
+  margin: 1.5vw; 
+  width: 35%; 
+ }
+
+.about {
+  margin-left: 3vw; 
+  font-family: Helvetica, Arial, sans-serif; 
+  color: var(--cream);
+  font-weight: 100; 
+  font-size: 3vw; 
+}
+
+.anne_marie {
+  justify-content: flex-start; 
+  font-family: great-vibes, helvetica, sans-serif; 
+  font-size: 6vw; 
+  font-weight: 300; 
+  margin-left: -11vw;
+  padding: 2vw; 
+  color: var(--cream);
+ }
+
+ .founder_instructor {
+  font-family: Helvetica, Arial, sans-serif; 
+  color: var(--cream);
+  font-weight: 100; 
+  font-size: 3vw; 
+  margin-top: -11vw; 
+  margin-left: 40vw; 
+ }
+
+ .bio {
+  display: flex; 
+  flex-wrap: wrap; 
+  font-size: 2.5vw; 
+ }
+
+.bio_paragraph {
+  display: flex;  
+  margin-top: 1vw; 
+  margin-left: 2vw;  
+  margin-right: 6vw;  
+  margin-bottom: 4vw; 
+}
+
+.form_field_questions {
+border: .5vw solid var(--light-brown)
+}
+
+.form_field_email {
+  border: .5vw solid var(--light-brown)
+}
+
+.send_question {
+  border: .5vw solid var(--light-brown)
+}
+
+.questions {
+  margin-left: 0;
+  font-size: 2.75vw; 
+}  
+
+@font-face {
+font-family: "great-vibes";
+font-weight: 400;
+font-style: normal;
+  src: url(https://use.typekit.net/mad0bfm.css);
+ }
+
+.sign-up_section {
+  padding-top: 3vw; 
+  padding-bottom: 3vw; 
+  padding-left: 5vw; 
+}
+
+footer {
+  display: flex;
+  margin-left: 1.25vw;  
+  margin-top: 4vw; 
+  font-size: 2.75vw;
+}
+
+.footer_logo {
+display: flex; 
+padding: 0;  
+border: 0; 
+margin-right: 8vw; 
+margin-left: -9vw; 
+margin-bottom: 14vw; 
+margin-top: -1vw; 
+width:15%;
+}
+
+.top_of_footer {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap; 
+}
+
+.dark-tan-bg {
+   background-color: #C59c6c;
+}
+
+.piano_keys_image {
+  width: 16%;
+}
+
+.rubber_ducky_icon {
+  width:13%;
+
+}
+
+.music_note_icon {
+  width:15%;
+}
+
+
+/*For Sign-Up Form: */
+.form-style{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  /* align-items: center;  */
+  align-self: stretch; 
+  width: 65vw; 
+  font-size: 2.5vw; 
+  margin-right: 0;
+  margin-left: 10vw; 
+}
+
+.form-box{
+  display: block; 
+  color:#42210B;
+  font-family: helvetica, sans-serif;
+  font-weight: 200; 
+  font-size: 2.25vw; 
+  background-color: white;
+  padding: .5vw; 
+ border: .25vw solid var(--light-brown);
+}
+
+
+.submit-button {
+  color:#F5F2DA; 
+  background-color: var(--lsms-blue);
+  width: 19vw; 
+  height: 6vw; 
+  margin-right: 30vw; 
+  margin-left: 19vw; 
+  font-family: helvetica, sans-serif;
+  font-weight: 200; 
+  font-size: 2.25vw; 
+}
+
+
+.questions-form { 
+  display: flex; 
+  margin-right: 0;
+  margin-left: 16vw; 
+}
+
+.questions-area{
+  display: flex; 
+  align-content: flex-start; 
+  padding-top: 0; 
+  color:#42210B;
+  font-family: helvetica, sans-serif;
+  font-weight: 200; 
+  font-size: 2.25vw; 
+  background-color: whitesmoke;
+  padding: .5vw; 
+  height: 15vw; 
+  border: .25vw solid var(--light-brown);
+  padding-top: 1vw; 
+}
+
+.questions-form-padding {
+  padding-top: 3vw; 
+  padding-bottom: 3vw; 
+}
+
+.q-email-area {
+  color:#42210B;
+  font-family: helvetica, sans-serif;
+  font-weight: 200; 
+  font-size: 2.25vw; 
+  background-color: white;
+  padding: 1vw; 
+  border: .25vw solid var(--light-brown);
+}
+.adjust_margin {
+  margin-left: 5vw; 
+  padding-top: 0; 
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  z-index: 10; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cream);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: var(--dark-brown);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start; 
+  padding-left: 4vw; 
+  margin-top: 1vw; 
+  margin-bottom: 1vw; 
+}
+
+.dropdown-content a:active{background-color: var(--lsms-blue);
+color: var(--cream);
+}
+
+.show {display:block;}
+
+.no-show {display:none;}
+
+
+/* Rules for Childhood Music Page */
+
+.rubber_ducky2 {
+height: 20vw;
+align-self: center; 
+/* margin-right: 15vw;  */
+margin-top: 0; 
+}
+
+
+.register_button {
+  color:#F5F2DA; 
+  background-color: var(--lsms-blue);
+  width: 19vw; 
+  height: 6vw; 
+  /* margin-right: 30vw; 
+  margin-left: 20vw;  */
+  font-family: helvetica, sans-serif;
+  font-weight: 200; 
+  font-size: 2.25vw; 
+}
+
+.childhood_main {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-items: center;
+  font-size: 2.75vw; 
+  row-gap: 8vw; 
+  margin-right: 5vw; 
+  margin-left: 5vw; 
+  margin-bottom: 2.5vw; 
+}
+
+.adjust_h1{
+  display: flex; 
+  padding:0; 
+  margin:0; 
+}
+
+.adjust_h2{
+  display: flex; 
+  justify-content: center; 
+  font-size: 3.5vw; 
+
+  padding-top: 0;
+  margin-top: 0; 
+  margin-bottom: 6vw; 
+}
+
+.footer2 {
+  margin: 0; 
+  margin-top: 8vw; 
+  display: flex;
+  font-size: 2.75vw;
+  flex-direction: row; 
+}
+
+.footer_p {
+  margin-left: 2vw; 
+  padding-top: 4vw; 
+}
+
+.footer3 {
+  display: flex; 
+}
+
+.footer_logo2 {
+display: flex; 
+padding: 0;  
+border: 0; 
+margin-right: 8vw; 
+margin-left: -9vw; 
+margin-bottom: 6vw; 
+
+width:15%;
+}
+
+.video {
+  display: flex; 
+  margin-right: 30vw; 
+  margin-left: 20vw;
+}
